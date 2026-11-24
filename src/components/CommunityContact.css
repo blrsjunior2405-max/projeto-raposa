@@ -1,0 +1,11 @@
+/* Contato oficial da comunidade exibido junto ao formulário e ao pedido de visita. */
+.visitor-contact{grid-column:1/-1;display:flex;flex-direction:column;gap:6px;padding:13px;background:#edf0e7;color:#52614d;font-size:10px;line-height:1.55}
+.visitor-contact b{color:#31563e}
+.visitor-contact a{width:fit-content;color:#254c3a;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.visitor-history-contact{margin:0 0 15px}
+.community-contact-form{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:14px}
+.community-contact-form label{display:flex;flex-direction:column;gap:7px;color:#62645b;font-size:10px;font-weight:700}
+.community-contact-form input{width:100%;min-height:40px;padding:9px 10px;border:1px solid #dfdcd2;border-radius:0;background:#fbfaf6;color:#303329;font:11px var(--sans)}
+.community-contact-form label span{font-size:9px;font-weight:400;line-height:1.5}
+.community-contact-form .manage-primary{min-height:40px}
+@media(max-width:720px){.visitor-contact{grid-column:auto}.community-contact-form{grid-template-columns:1fr}.community-contact-form .manage-primary{width:100%}}

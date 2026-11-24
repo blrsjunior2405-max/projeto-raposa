@@ -1,0 +1,17 @@
+/* Atalhos mantêm as áreas de visitante e gestão visíveis em todas as telas principais. */
+.nav-management{white-space:nowrap}
+.visitor-topbar-links,.management-shortcuts{display:flex;align-items:center;gap:18px}
+.visitor-management-link,.management-shortcuts a,.login-visitor-link{color:#31563e;font-size:10px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.demo-form-notice{margin-bottom:4px}
+.demo-form-result{margin:16px 0 0}
+.visitor-form textarea{font:11px var(--sans)}
+.visitor-allergy-fieldset{grid-column:1/-1;min-width:0;margin:0;padding:12px;border:1px solid #dfdcd2}
+.visitor-allergy-fieldset legend{padding:0 5px;color:#62645b;font-size:9px;font-weight:700}
+.visitor-allergy-fieldset legend span,.visitor-allergy-details>span{color:#a84735}
+.visitor-allergy-options{display:flex;gap:18px}
+.visitor-allergy-options label{display:flex;align-items:center;gap:7px;color:#62645b;font-size:10px;font-weight:600;cursor:pointer}
+.visitor-allergy-options input{width:16px;min-height:16px;margin:0;padding:0;accent-color:#254c3a}
+.visitor-allergy-details{display:flex;flex-direction:column;gap:6px;margin-top:12px;color:#62645b;font-size:9px;font-weight:700}
+.visitor-allergy-details textarea{min-height:68px}
+@media(max-width:720px){.visitor-topbar-links,.management-shortcuts{gap:10px}.visitor-management-link,.management-shortcuts a{font-size:9px}}
+@media(max-width:720px){.visitor-allergy-fieldset{grid-column:auto}}

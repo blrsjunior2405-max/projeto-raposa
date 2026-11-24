@@ -1,0 +1,35 @@
+/* Filtro, legenda, indicadores de situação e janela de detalhes do agendamento. */
+.calendar-tools{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:0 0 14px}
+.calendar-view-switch{display:flex;justify-content:flex-end;gap:6px;margin:-5px 0 12px}.calendar-view-switch button{min-height:30px;padding:0 11px;border:1px solid #dcdacf;background:#fffefa;color:#596254;font:600 9px 'DM Sans',sans-serif;cursor:pointer}.calendar-view-switch button.active{border-color:#31563e;background:#edf0e7;color:#31563e}
+.calendar-filter{display:flex;flex-direction:column;gap:5px;color:#77786e;font-size:9px;font-weight:700}
+.calendar-filter select{max-width:min(300px,55vw);min-height:32px;padding:0 28px 0 9px;border:1px solid #e6e3da;background:#fffefa;color:#34382e;font:500 10px 'DM Sans',sans-serif}
+.calendar-filter select:focus-visible,.calendar-booking-details:focus-visible,.calendar-dialog-close:focus-visible{outline:2px solid #254c3a;outline-offset:2px}
+.calendar-legend{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px 13px;color:#77786e;font-size:8px}
+.calendar-legend>span,.calendar-booking-status{display:inline-flex;align-items:center;gap:5px}
+.calendar-day-indicators{position:absolute;right:3px;bottom:3px;display:flex;align-items:center;gap:4px}
+.calendar-day-count{position:static;min-width:15px;height:15px}
+.calendar-day-statuses{display:flex;gap:2px}
+.calendar-status-dot{width:7px;height:7px;flex:none;border-radius:50%;background:#a5a69c}
+.calendar-status-dot.status-requested{background:#d39a34}
+.calendar-status-dot.status-confirmed{background:#3c724b}
+.calendar-status-dot.status-completed{background:#78828a}
+.calendar-status-dot.status-other{background:#a5a69c}
+.calendar-booking-status{color:#77786e}
+.calendar-booking-details{align-self:flex-start;padding:0;border:0;background:transparent;color:#31563e;font:600 9px 'DM Sans',sans-serif;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.calendar-dialog-backdrop{position:fixed;z-index:1000;inset:0;display:grid;place-items:center;padding:18px;background:#17231ccc}
+.calendar-booking-dialog{width:min(520px,100%);max-height:min(85vh,760px);overflow:auto;padding:22px;background:#fffefa;box-shadow:0 18px 60px #101a1640}
+.calendar-dialog-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:15px;border-bottom:1px solid #eeece5}
+.calendar-dialog-heading .eyebrow{color:#77786e;font-size:8px;letter-spacing:.1em}
+.calendar-dialog-heading h3{margin:5px 0 0;color:#33372e;font:600 21px 'Playfair Display',Georgia,serif}
+.calendar-dialog-close{width:32px;height:32px;border:1px solid #e6e3da;background:#fbfaf6;color:#345940;font-size:22px;line-height:1;cursor:pointer}
+.calendar-dialog-fields{display:grid;gap:0;margin:7px 0 0}
+.calendar-dialog-fields>div{display:grid;grid-template-columns:145px minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid #eeece5}
+.calendar-dialog-fields dt{color:#77786e;font-size:10px}
+.calendar-dialog-fields dd{min-width:0;margin:0;color:#34382e;font-size:10px;line-height:1.55;overflow-wrap:anywhere}
+.calendar-dialog-fields dd a{color:#31563e;text-decoration:underline;text-underline-offset:2px}
+.calendar-dialog-status{display:inline-flex;align-items:center;gap:6px}
+.calendar-dialog-status::before{width:8px;height:8px;border-radius:50%;background:#a5a69c;content:''}
+.calendar-dialog-status.status-requested::before{background:#d39a34}
+.calendar-dialog-status.status-confirmed::before{background:#3c724b}
+.calendar-dialog-status.status-completed::before{background:#78828a}
+@media(max-width:520px){.calendar-tools{align-items:stretch;flex-direction:column}.calendar-filter select{max-width:100%}.calendar-legend{justify-content:flex-start}.calendar-dialog-fields>div{grid-template-columns:115px minmax(0,1fr);gap:9px}.calendar-booking-dialog{padding:17px}}

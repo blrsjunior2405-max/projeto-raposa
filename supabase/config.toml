@@ -1,0 +1,3 @@
+[functions.create-guide]
+# Esta função verifica o token de quem chamou antes de aceitar a criação de um guia.
+verify_jwt = true
